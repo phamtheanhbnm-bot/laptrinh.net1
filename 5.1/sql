@@ -1,0 +1,25 @@
+
+# 1
+
+CREATE DATABASE LoginDB;
+GO
+
+USE LoginDB;
+GO
+
+CREATE TABLE TaiKhoan
+(
+    TenDangNhap VARCHAR(50) PRIMARY KEY,
+    MatKhau VARCHAR(100) NOT NULL
+);
+GO
+
+INSERT INTO TaiKhoan (TenDangNhap, MatKhau)
+VALUES ('admin', '123456');
+GO
+
+# 2
+
+USE LoginDB;
+
+SELECT * FROM TaiKhoan;
